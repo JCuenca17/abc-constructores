@@ -1,0 +1,223 @@
+/* about section */
+
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: var(--white-color);
+}
+
+.about__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+    width: 80%;
+}
+
+.about__img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.about__img img {
+    width: 100%;
+}
+
+.about__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about__section .about__title {
+    text-transform: uppercase;
+    color: var(--blue-color);
+}
+
+.about__section .about__title h2 {
+    font-size: 2rem;
+}
+
+.about__section .about__content h3 {
+    margin-top: 20px;
+    color: var(--grey-color);
+}
+
+.about__section .about__content p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* .about__section .about__content .about__btn {
+    margin-top: 30px;
+}
+
+.about__section .about__content .about__btn a {
+    background-color: var(--pink-color);
+    padding: 15px 40px;
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    letter-spacing: 3px;
+    border-radius: 10px;
+}
+
+.about__section .about__content .about__btn a:hover {
+    background-color: var(--blue-color);
+    transition: all 0.5s ease;
+} */
+
+.about__section .about__social {
+    margin-top: 40px;
+}
+
+.about__section .about__social i {
+    color: var(--blue-color);
+    font-size: 30px;
+    padding: 0px 10px;
+}
+
+.about__section .about__social i:hover {
+    color: var(--pink-color);
+}
+
+/* team section */
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey2-color);
+    padding: 100px 0;
+}
+
+.team__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.team__wrapper h2 {
+    text-align: center;
+    color: var(--blue-color);
+    font-size: 2rem;
+    padding-bottom: 25px;
+}
+
+.team__wrapper .team__members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team__wrapper .team__members .team__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.team__wrapper .team__members .team__card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.team__wrapper .team__members .team__card h4 {
+    font-size: 16px;
+    margin: 7px;
+    color: var(--blue-color);
+}
+
+.team__wrapper .team__members .team__card p {
+    text-transform: uppercase;
+    color: var(--grey-color);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* purpose section */
+
+.purpose {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    padding: 100px 0;
+}
+
+.purpose__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.purpose__container h2 {
+    text-align: center;
+    color: var(--blue-color);
+    font-size: 2rem;
+    padding-bottom: 25px;
+}
+
+.purpose__container .purpose__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.purpose__container .purpose__cards .purpose__content {
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    height: 220px;
+}
+
+.purpose__container .purpose__cards .purpose__content h4{
+    font-size: 20px;
+    color: var(--pink-color); 
+}
+
+.purpose__container .purpose__cards .purpose__content p{
+    font-size: 18px;
+    margin: 20px;
+    text-align: justify;
+    color: var(--blue-color); 
+}
+
+/* media-query*/
+@media(max-width:1100px) {
+    .about__img {
+        display: none;
+    }
+
+    .about__section .about__title {
+        text-align: center;
+    }
+
+    .about__section .about__content h3 {
+        text-align: center;
+    }
+
+/*     .about__section .about__content .about__btn {
+        text-align: center;
+    } */
+
+    .about__section .about__social {
+        text-align: center;
+    }
+}
+
+@media(max-width:475px) {
+    .purpose__container .purpose__cards .purpose__content{
+        width: 330px;
+    }
+}

@@ -1,0 +1,238 @@
+/* who-section */
+.who__section {
+    margin-top: 80px;
+    width: 100%;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.who__section button {
+    margin-top: 40px;
+}
+
+.who__section h2 {
+    color: var(--blue-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.who__section .who__peragraph {
+    width: 45%;
+    font-size: 1rem;
+    color: var(--grey-color);
+    text-align: center;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+
+.who__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    z-index: 0;
+    margin-top: 20px;
+}
+
+.who__cards .who__card {
+    min-height: 320px;
+    width: 350px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0 8%;
+    background: var(--blue-color);
+    position: relative;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.who__cards .who__card:hover {
+    background-color: var(--pink-color);
+    transition: all 0.5s ease;
+}
+
+.who__cards .who__card i {
+    font-size: 2.5rem;
+    color: var(--white-color);
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.who__cards .who__card h3 {
+    font-size: 1.8rem;
+    color: var(--white-color);
+    margin-bottom: 10px;
+}
+
+.who__cards .who__card .who__content p {
+    color: var(--white-color);
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* project-section*/
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    margin-bottom: 100px;
+}
+
+.projects .project__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.projects .project__title h2 {
+    color: var(--blue-color);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.projects .project__title p {
+    width: 100%;
+    font-size: 1rem;
+    color: var(--grey-color);
+    text-align: center;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+
+.project__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding-top: 50px;
+}
+
+.project__container .project__card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: var(--blue-color);
+    border-radius: 20px;
+    transition: 0.5s all ease;
+}
+
+.project__container .project__card:hover {
+    height: 400px;
+}
+
+.project__container .project__card .project__img img {
+    position: absolute;
+    transition: 0.5s all ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.project__container .project__card:hover .project__img {
+    scale: 0.75;
+}
+
+.project__container .project__card .project__content {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0 30px;
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s all ease;
+}
+
+.project__container .project__card:hover .project__content {
+    top: 120px;
+    height: 250px;
+}
+
+.project__container .project__card .project__content h2 {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    text-shadow: var(--black-color) 0 2px;
+}
+
+.project__container .project__card .project__content p {
+    color: var(--white-color);
+}
+
+/* media-query*/
+@media(max-width:1100px) {
+    .who__section {
+        margin-top: 20px;
+    }
+
+    .who__section h2 {
+        margin-top: 30px;
+    }
+
+    .who__cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .who__section .who__peragraph {
+        width: 80%;
+    }
+
+    .projects .project__title {
+        margin-top: 30px;
+    }
+
+    .projects .project__title p {
+        width: 80%;
+    }
+}
+
+@media(max-width:900px) {
+    .who__cards .who__card {
+        height: 300px;
+        width: 400px;
+        margin: 20px 0;
+    }
+}
+
+@media(max-width:475px) {
+    .who__cards .who__card {
+        height: 200px;
+        width: 300px;
+        margin: 20px 0;
+    }
+
+    .who__cards .who__card i {
+        font-size: 1.25rem;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .who__cards .who__card h3 {
+        font-size: 1.6rem;
+    }
+
+    .who__cards .who__card .who__content p {
+        color: var(--white-color);
+        font-size: 1rem;
+    }
+}
