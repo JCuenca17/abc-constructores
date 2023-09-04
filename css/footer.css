@@ -125,3 +125,9 @@
         padding: 20px 40px 30px;
     }
 }
+
+@media (max-width: 575px){
+    .foot{
+        padding: 20px;
+    }
+}

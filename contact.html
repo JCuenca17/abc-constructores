@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/banner.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/contact.css">
   <script src="https://kit.fontawesome.com/874f5a06e8.js" crossorigin="anonymous"></script>
 </head>
 
@@ -40,8 +41,89 @@
       </div>
     </section>
 
-    <section class="about">
-
+    <section class="contactUs">
+      <div class="contact">
+        <div class="contact__title">
+          <h2>Contáctanos</h2>
+        </div>
+        <div class="contact__box">
+          <div class="contact__div form">
+            <h3>Envía un mensaje</h3>
+            <form action="#">
+              <div class="contact__form">
+                <div class="form__row">
+                  <div class="form__input">
+                    <span>Nombre</span>
+                    <input placeholder="Abc" type="text" class="input" name="name" id="name" required data-name
+                      data-tipo="name">
+                    <p class="input-message-error"></p>
+                  </div>
+                  <div class="form__input">
+                    <span>Apellido</span>
+                    <input placeholder="Constructores" type="text" class="input" name="last_name" id="last_name"
+                      required data-last_name data-tipo="last_name">
+                    <p class="input-message-error"></p>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__input">
+                    <span>Correo Electrónico</span>
+                    <input placeholder="abc@constructores.com" type="email" class="input" name="email" id="email"
+                      required data-email data-tipo="email">
+                    <p class="input-message-error"></p>
+                  </div>
+                  <div class="form__input">
+                    <span>Celular</span>
+                    <input placeholder="999888777" type="text" class="input" name="phone" id="phone"
+                      pattern="^(\+51)?[1-9]\d{8}$" data-phone data-tipo="phone">
+                    <p class="input-message-error"></p>
+                  </div>
+                </div>
+                <div class="form__row2">
+                  <div class="form__input">
+                    <span>Mensaje</span>
+                    <textarea placeholder="Escriba su mensaje aquí..." type="text" class="input" minlength="10"
+                      name="message" id="message" required data-message data-tipo="message"></textarea>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__input">
+                    <input type="submit" value="Enviar">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="contact__div info">
+            <h3>Contacto</h3>
+            <div class="contact__info">
+              <div>
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <p>Calle Misti 406 Yanahuara, Arequipa <br>PERU</p>
+              </div>
+              <div>
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <a href="mailto:abc.constructoressrl@gmail.com">abc.constructoressrl@gmail.com</a>
+              </div>
+              <div>
+                <span><i class="fa-solid fa-phone"></i></span>
+                <a href="tel:">+51 999 999 999</a>
+              </div>
+              <ul class="contact__social">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="contact__div map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.229624288377!2d-71.54062631925738!3d-16.390561509327632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a4458817443%3A0xf1cd052dc0d86459!2sMisti%20120%2C%20Yanahuara%2004017!5e0!3m2!1ses!2spe!4v1693848382762!5m2!1ses!2spe"
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -101,6 +183,8 @@
   <div class="copyright">
     <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet.</p>
   </div>
+
+  <script type="module" src="./js/validacion/app.js"></script>
 </body>
 
 </html>
